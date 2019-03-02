@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "alias": "insight.quick-foot.com",
+    "builds": [{ "src": "./build/**", "use": "@now/static" }],
+    "routes": [
+        {
+            "src": "/(favicon.ico|assets/.+|.+\\.css|.+\\.js)",
+            "headers": { "cache-control": "max-age=31536000,immutable" },
+            "dest": "/build/$1"
+        },
+        {
+            "src": "/(.*).html",
+            "headers": { "cache-control": "public,max-age=0,must-revalidate" },
+            "dest": "/build/$1.html"
+        },
+        {
+            "src": "/(.*)",
+            "headers": { "cache-control": "public,max-age=0,must-revalidate" },
+            "dest": "/build/index.html"
+        }
+    ]
+}
