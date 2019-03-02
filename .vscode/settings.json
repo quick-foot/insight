@@ -4,6 +4,9 @@
         "**/build": true,
         "**/coverage/**/*": true
     },
+    "[yaml]": {
+        "editor.tabSize": 4
+    },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "editor.formatOnSave": true,
@@ -21,6 +24,5 @@
     "prettier.proseWrap": "always",
     "prettier.htmlWhitespaceSensitivity": "ignore",
     "prettier.disableLanguages": ["html", "angular"],
-    "typescript.tsdk": "node_modules\\typescript\\lib",
-    "debug.node.autoAttach": "on"
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }
