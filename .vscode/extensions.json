@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "angular.ng-template",
+        "apollographql.vscode-apollo",
         "eg2.vscode-npm-script",
         "esbenp.prettier-vscode",
         "mikael.angular-beastcode",
