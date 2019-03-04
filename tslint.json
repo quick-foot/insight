@@ -1,4 +1,3 @@
 {
-    "extends": "@quick-foot/tslint-config",
-    "defaultSeverity": "error"
+    "extends": "@quick-foot/tslint-config"
 }

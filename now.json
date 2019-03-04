@@ -1,22 +1,38 @@
 {
     "version": 2,
     "alias": "insight.quick-foot.com",
-    "builds": [{ "src": "./build/**", "use": "@now/static" }],
+    "builds": [
+        { "src": "./build/client/**", "use": "@now/static" },
+        {
+            "src": "./build/server/**",
+            "use": "@now/node@canary"
+        }
+    ],
+    "env": {
+        "NODE_ENV": "production",
+        "GITHUB_CLIENT_ID": "@github-client-id",
+        "GITHUB_CLIENT_SECRET": "@github-client-secret",
+        "COOKIE_NAME": "@cookie-name",
+        "COOKIE_SECRET": "@cookie-secret",
+        "COOKIE_KEY": "@cookie-key"
+    },
     "routes": [
+        { "src": "/api/authorize", "dest": "/build/server/authorize" },
+        { "src": "/api/access-token", "dest": "/build/server/access-token" },
         {
             "src": "/(favicon.ico|assets/.+|.+\\.css|.+\\.js)",
             "headers": { "cache-control": "max-age=31536000,immutable" },
-            "dest": "/build/$1"
+            "dest": "/build/client/$1"
         },
         {
             "src": "/(.*).html",
             "headers": { "cache-control": "public,max-age=0,must-revalidate" },
-            "dest": "/build/$1.html"
+            "dest": "/build/client/$1.html"
         },
         {
             "src": "/(.*)",
             "headers": { "cache-control": "public,max-age=0,must-revalidate" },
-            "dest": "/build/index.html"
+            "dest": "/build/client/index.html"
         }
     ]
 }

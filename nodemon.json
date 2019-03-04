@@ -1,0 +1,7 @@
+{
+    "signal": "SIGHUP",
+    "watch": ["src/server"],
+    "ext": "ts",
+    "ignore": ["src/server/package.json"],
+    "exec": "npm run server:dev"
+}

@@ -4,7 +4,6 @@
 /build
 /tmp
 /out-tsc
-/coverage
 # Only exists if Bazel was run
 /bazel-out
 
@@ -41,6 +40,8 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+apollo.config.js
+.env
 
 # System Files
 .DS_Store
