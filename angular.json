@@ -23,7 +23,10 @@
                         "polyfills": "src/client/polyfills.ts",
                         "tsConfig": "src/client/tsconfig.app.json",
                         "assets": ["src/client/favicon.ico", "src/client/assets"],
-                        "styles": ["src/client/styles.scss"],
+                        "styles": [
+                            "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+                            "src/client/styles.scss"
+                        ],
                         "scripts": [],
                         "es5BrowserSupport": true
                     },
@@ -79,7 +82,10 @@
                         "polyfills": "src/client/polyfills.ts",
                         "tsConfig": "src/client/tsconfig.spec.json",
                         "karmaConfig": "src/client/karma.conf.js",
-                        "styles": ["src/client/styles.scss"],
+                        "styles": [
+                            "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+                            "src/client/styles.scss"
+                        ],
                         "scripts": [],
                         "assets": ["src/client/favicon.ico", "src/client/assets"]
                     }
