@@ -1,0 +1,30 @@
+@import 'material';
+@import 'theme';
+@import 'variables';
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+app-root {
+    flex: 1;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($primary-color, 7.5);
+        text-decoration: underline;
+    }
+}

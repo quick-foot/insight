@@ -18,4 +18,3 @@ script:
     - npm run build
     - npm run lint
     - npm run test -- --no-watch
-    - npm run e2e

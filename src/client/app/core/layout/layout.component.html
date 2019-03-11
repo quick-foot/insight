@@ -1,0 +1,19 @@
+<div gdAreas="header header header | . content . | footer footer footer"
+     gdRows="64px auto 64px"
+     gdColumns.xs="16px auto 16px"
+     gdColumns.lt-lg="24px auto 24px"
+     gdColumns.gt-md="auto 1200px auto"
+     id="layout">
+    <app-header gdArea="header"></app-header>
+
+    <div gdArea="content"
+         id="content"
+         class="mat-typography">
+        <router-outlet></router-outlet>
+    </div>
+
+    <app-footer gdArea="footer"
+                gdAlignRows="center"
+                fxFlexAlign="center">
+    </app-footer>
+</div>
