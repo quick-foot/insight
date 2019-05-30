@@ -14,7 +14,7 @@
         "server:watch": "nodemon",
         "ts-node": "ts-node -P scripts/tsconfig.json -r tsconfig-paths/register",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-        "app-version": "npm run ts-node ./scripts/version.ts && git add src/app/core/version.ts",
+        "app-version": "npm run ts-node ./scripts/version.ts && git add src/client/app/core/version.ts",
         "version": "npm run changelog && npm run app-version",
         "postversion": "git push --follow-tags",
         "deploy": "npm run server:build && npm run build && now && now alias && now rm insight -y -s"

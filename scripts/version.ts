@@ -3,7 +3,7 @@ import { writeFile } from 'fs';
 import { resolve } from 'path';
 import { version } from '../package.json';
 
-const filePath = resolve(`src/app/core/version.ts`);
+const filePath = resolve(`src/client/app/core/version.ts`);
 const src = `export const version = '${version}';
 `;
 
