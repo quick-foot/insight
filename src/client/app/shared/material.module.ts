@@ -1,17 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {
-    MatButtonModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatListModule,
-    MatMenuModule,
-    MatSelectModule,
-    MatSidenavModule,
-    MatSnackBarModule,
-    MatToolbarModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 const modules = [
     CommonModule,
@@ -33,4 +31,4 @@ const modules = [
     exports: modules,
     providers: []
 })
-export class MaterialModule {}
+export class MaterialModule { }
